@@ -29,6 +29,11 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
+TAILWIND_APP_NAME = 'mainapp'
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,7 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'word_search'
+    'mainapp',
+    'tailwind',
+    'django_browser_reload',
 ]
 
 MIDDLEWARE = [
@@ -48,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_browser_reload.middleware.BrowserReloadMiddleware',
 ]
 
 ROOT_URLCONF = 'django_project.urls'
