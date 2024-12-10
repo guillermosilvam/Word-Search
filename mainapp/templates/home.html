@@ -1,0 +1,11 @@
+{% extends "_base.html" %}
+
+{% block content %}
+   <div class="h-[100%] w-[100%] bg-gradient-to-br from-[#A950A1] to-[#2D3A54] font-sans leading-normal tracking-normal ">
+		<div class="h-[100%] w-[100%] flex flex-col items-center justify-evenly ">
+			<h1 class="mx-auto text-6xl text-white font-semibold pointer-events-none">Word Search</h1>
+            <a href="{% url 'mainapp:game' %}" class="text-white font-light text-2xl opacity-50 hover:opacity-100 hover:text-4xl  transition-all"><h2>Start</h2></a>
+		</div>
+	</div>
+{% endblock content %}
+
