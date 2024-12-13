@@ -1,10 +1,13 @@
-function showHide() {
+function showGamePage() {
     var container = document.getElementById("rules");
+    var gamePage = document.getElementById("gamePage");
 
-    if (container.style.visibility == "hidden") {
-        container.style.visibility = "visible";
-    } else {
-        container.style.visibility = "hidden";
-    }
-    
+    container.classList.add('hidden')
+    gamePage.classList.remove('hidden')
+}
+
+window.onload = function rules(params) {
+    var rules = document.getElementById("rules");
+    rules.classList.remove('hidden')
+    rules.classList.add('flex')
 }
