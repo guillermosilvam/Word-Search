@@ -8,8 +8,3 @@ function showHide() {
     }
     
 }
-
-//window.onload = function pop_up() {
-//    var container = document.getElementById("rules");
-//    container.style.visibility = "visible";
-//}

@@ -5,3 +5,6 @@ def home(request):
 
 def game(request):
     return render(request, 'game.html')
+
+def wordsearch(request):
+    return render(request, 'wordsearch.html')
