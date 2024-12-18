@@ -16,22 +16,17 @@
         <div class="w-[100%] h-[100%] bg-gray-900 flex items-center">
             <main class="w-[100%] max-w-[1100px] h-[90%] mx-auto">
                 <div class="w-[100%] h-[100%] bg-gray-900 flex items-center text-white gap-x-8">
-                    <div class=" w-[72%] h-[97%] bg-gray-800 rounded-2xl">
-                        <table>
+                    <div class=" w-[72%] h-[97%] bg-gray-800 rounded-2xl text-lg grid grid-cols-[repeat(auto-fill,_minmax(40px,_1fr))] grid-rows-[repeat(auto-fill,_minmax(40px,_1fr))]">
                             {% for i in letter %}
-                            <tr>
-                                <td>{{ i }}</td>
-                            </tr>
+                            <div class="flex items-center">
+                                <button class="mx-auto w-3/4">{{ i }}</button>
+                            </div>
                             {% endfor %}
-                        </table>
                     </div>
                     <aside class="w-[24%] h-[97%] bg-gray-800 rounded-2xl space-y-4 p-4">
-                        <p class="text-center text-2xl">Hola</p>
-                        <p class="text-center text-2xl">Hola</p>
-                        <p class="text-center text-2xl">Hola</p>
-                        <p class="text-center text-2xl">Hola</p>
-                        <p class="text-center text-2xl">Hola</p>
-                        <p class="text-center text-2xl">Hola</p>
+                        {% for i in words %}
+                            <p class="text-center text-2xl">{{ i }}</p>
+                        {% endfor %}
                     </aside>
                 </div>
             </main>
