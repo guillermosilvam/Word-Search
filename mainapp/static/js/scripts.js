@@ -6,8 +6,10 @@ function showGamePage() {
     gamePage.classList.remove('hidden')
 }
 
-window.onload = function rules(params) {
+window.onload = function rules() {
     var rules = document.getElementById("rules");
     rules.classList.remove('hidden')
     rules.classList.add('flex')
 }
+
+

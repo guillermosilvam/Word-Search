@@ -13,18 +13,29 @@
         </div>
     </div>
     <div id="gamePage" class="w-[100%] h-[100%] bg-gray-900 hidden">
-        <main class="w-[100%] max-w-[1100px] h-screen mx-auto border-x-2 border-slate-700">
-            <nav class="border-b-2 border-slate-700 h-[7%] text-white flex items-center justify-between">
-                <h1 class="text-3xl font-thin ml-3">Word Search</h1> 
-                <ul class="text-xl font-thin mt-1 mx-3">
-                    <li><a href=""><h2>Rules</h2></a></li>
-                </ul>
-            </nav>
-            <div class="w-[100%] h-[93%] bg-gray-900 ">
-                <div class=" w-[72%] h-[97%] float-left bg-gray-800 rounded-2xl mt-3 ml-3 mr-4"></div>
-                <aside class="w-[24%] h-[97%] float-left bg-gray-800 rounded-2xl mt-3 mr-3"></aside>
-            </div>
-        </main>
+        <div class="w-[100%] h-[100%] bg-gray-900 flex items-center">
+            <main class="w-[100%] max-w-[1100px] h-[90%] mx-auto">
+                <div class="w-[100%] h-[100%] bg-gray-900 flex items-center text-white gap-x-8">
+                    <div class=" w-[72%] h-[97%] bg-gray-800 rounded-2xl">
+                        <table>
+                            {% for i in letter %}
+                            <tr>
+                                <td>{{ i }}</td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                    <aside class="w-[24%] h-[97%] bg-gray-800 rounded-2xl space-y-4 p-4">
+                        <p class="text-center text-2xl">Hola</p>
+                        <p class="text-center text-2xl">Hola</p>
+                        <p class="text-center text-2xl">Hola</p>
+                        <p class="text-center text-2xl">Hola</p>
+                        <p class="text-center text-2xl">Hola</p>
+                        <p class="text-center text-2xl">Hola</p>
+                    </aside>
+                </div>
+            </main>
+        </div> 
     </div>
 
 {% endblock content %}
