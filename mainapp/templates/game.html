@@ -17,10 +17,10 @@
             <main class="w-[100%] max-w-[1100px] h-[90%] mx-auto">
                 <div class="w-[100%] h-[100%] bg-gray-900 flex items-center text-white gap-x-8">
                     <div class=" w-[72%] h-[97%] bg-gray-800 rounded-2xl text-lg grid grid-cols-[repeat(auto-fill,_minmax(40px,_1fr))] grid-rows-[repeat(auto-fill,_minmax(40px,_1fr))]">
-                            {% for i in letter %}
-                            <div class="flex items-center">
-                                <button class="mx-auto w-3/4">{{ i }}</button>
-                            </div>
+                            {% for i in letters %}
+                                <div class="flex items-center outline-1 outline-white ">
+                                    <button class="mx-auto w-3/4">{{ i }}</button>
+                                </div>
                             {% endfor %}
                     </div>
                     <aside class="w-[24%] h-[97%] bg-gray-800 rounded-2xl space-y-4 p-4">

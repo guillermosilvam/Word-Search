@@ -1,20 +1,29 @@
 from django.shortcuts import render
-import random
+import random, string
 
 def home(request):
     return render(request, 'home.html')
 
 def game(request):
-    letter = [
-    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-    ]
+    
 
     words = [
         'Apple', 'Banana', 'Cat', 'Dog', 'Elephant', 'Frog', 'Giraffe', 'Horse', 'Iguana', 'Jaguar'
     ]    
+
+    letters_num = 285
+    def letters_generator(letters_num):
+        letter = []
+        for i in range(letters_num):
+            letters = random.choice(string.ascii_lowercase)
+            letter.append(letters)
+        return letter
+    
+    letters = letters_generator(letters_num)
+    
     
     game = {
-        'letter' : letter,
+        'letters' : letters,
         'words' : words
     }
 
